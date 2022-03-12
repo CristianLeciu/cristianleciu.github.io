@@ -1,4 +1,145 @@
-header {
+*{
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+}
+
+@keyframes alteran{
+    0%{opacity: 0;}
+    55%{opacity: 0;}
+    65%{color: #440000;}
+    100%{opacity: 1; color: #000000;}
+} 
+
+@keyframes fade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes vidan {
+    99.9%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+.title {
+    text-align: 100%;
+    position: fixed;
+    z-index: 1000;
+    animation: alteran 2.2s;
+    font-size: 60pt;
+    left: 600px;
+    top: 70px;
+}
+
+
+/*
+
+.title {
+    position: relative;
+    z-index: 1000;
+    display:flex;
     text-align: center;
-    padding-top: 7%;
+    animation: alteran 2.2s;
+    font-size: 60pt;
+}
+
+
+
+
+
+.title {
+    position: relative;
+    z-index: 1000;
+    display:flex;
+    text-align: center;
+    bottom: 500pt;
+    animation: alteran 2.2s;
+    font-size: 60pt;
+}
+
+
+
+
+
+
+*/
+
+.viddiv {
+    overflow: hidden;
+    position: fixed;
+    object-position: center;
+    object-fit: fill;
+    min-height: 100vh;
+    min-width: 100vw;
+    bottom: 0px;
+}
+
+/* 
+
+
+.viddiv {
+    overflow: hidden;
+    object-position: center;
+    object-fit: fill;
+    width: 100vw;
+
+}
+
+
+
+.viddiv {
+    position:relative;
+
+
+    object-fit: cover;
+    left: 0px;
+    top: 0px;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+
+.openvideo {
+    height: 100vh;
+    width: 100vh;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+
+.openvideo {
+    position: fixed;
+    align-items: center;
+    display: flex;
+    object-fit: cover;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+*/
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.phot{
+    top: 1000pt;
+    background: #000000;
+    position: relative;
+    z-index: 2;
+}
+
+.scrollimg {
+    animation: fade 3s;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding-top: 5%;
 }
